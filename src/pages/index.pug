@@ -2,7 +2,7 @@ extends common/layout
 
 block content
   .main
-    .top-section
+    .top-section#contacts
         .content
             .main-section
                 .avatar-part
@@ -56,8 +56,99 @@ block content
                             li
                                 a(href="#")
                                     img(src="img/teleg.svg", alt="tel")
+    .skills_section#skills        
+            .plate                
+                p.decor.section_header Навыки
+                .skills
+                    .skill
+                        .skill_img_wrp
+                            img(src="img/css.svg", alt="").skill_img
+                        p.skill_name CSS 3
+                    .skill
+                        .skill_img_wrp
+                            img(src="img/html.svg", alt="").skill_img
+                        p.skill_name HTML 5
+                    .skill
+                        .skill_img_wrp
+                            img(src="img/js.svg", alt="").skill_img
+                        p.skill_name JavaScript
+                    .skill
+                        .skill_img_wrp
+                            img(src="img/jq.svg", alt="").skill_img
+                        p.skill_name Jquery
+                    .skill.s_b
+                        .skill_img_wrp
+                            img(src="img/git.svg", alt="").skill_img
+                        p.skill_name GIT    
+                    .skill
+                        .skill_img_wrp
+                            img(src="img/gulp.svg", alt="").skill_img
+                        p.skill_name GULP
+                    .skill
+                        .skill_img_wrp
+                            img(src="img/styl.svg", alt="").skill_img
+                        p.skill_name Stylus
+                    .skill
+                        .skill_img_wrp
+                            img(src="img/fig.svg", alt="").skill_img
+                        p.skill_name Figma
+                    .skill
+                        .skill_img_wrp
+                            img(src="img/ph.svg", alt="").skill_img
+                        p.skill_name Photoshop
+                    .skill
+                        .skill_img_wrp
+                            img(src="img/eng.svg", alt="").skill_img
+                        p.skill_name Engleesh
+    .about_section#about
+        .content2
+            p.decor.section_header Обо мне
+            .about_content
+                .av_part
+                    img(src="img/f1.svg", alt="").fly_img.fly
+                    img(src="img/f2.svg", alt="").fly_img2.fly
+                    img(src="img/f3.svg", alt="").fly_img3.fly
+                    img(src="img/f4.svg", alt="").fly_img4.fly 
+                    .avatar-wrap2
+                        picture.avatar-pic2
+                          source(media="(min-width: 300px) and (max-width: 1200px)" srcset="img/avatar.jpg")
+                          source(media="(min-width: 1201px)" srcset="img/avatar.jpg")
+                          img(src="img/avatar.jpg" alt="asya_photo")
+                .text-part
+                    p Добро пожаловать на мой сайт-портфолио! 
+                    p Я работала front-end разработчиком удаленно и в офисе. Опыт работы около 2-х лет.  В основном занималась версткой сайтов и лендингов. Сейчас  нарабатываю портфолио. 
+                    p Приглашаю к сотрудничеству веб-дизайнеров, менеджеров веб-студий и всех кому нужна верстка и front-end! Сделаем интернет лучше вместе!
 
+    .portfolio_section#portfolio
+        .content2
+            p.decor.section_header Портфолио
+            .filter_part
+            .works_part
+                .one_work
+                    .work_img
+                        img(src="img/CoronaAlert.png", alt="")
+                    a(href="#").work_text
+                        img(src="img/search.svg", alt="").search
+                        span.name 
+                            | Сайт про коронавирус
+                        span.type-of-work
+                            | Верстка из макета в Figma
+                        span.description
+                            | Верстка лендинга с анимациями и эффектами появления некоторых блоков. Добавлена таблица со статистикой, ссылки на официальные источники
+                .one_work
+                    .work_img
+                        img(src="img/portfol.jpg", alt="")
+                    a(href="#").work_text
+                        img(src="img/search.svg", alt="").search
+                        span.name 
+                            | Сайт портфолио
+                        span.type-of-work
+                            | Верстка из макета в Figma
+                        span.description
+                            | Верстка лендинга с анимациями svg 
+                                        
+                               
+        
 
+             
 
-
-      
