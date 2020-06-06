@@ -1,9 +1,25 @@
 extends common/layout
 
 block content
-    main.main
-        h1 Title
-        hr
-        include includes/about/company-info
-        hr
-        //- и другие блоки
+    .about_wrap
+        .bg
+        .content2
+            a(href="index.html#portfolio").back_link
+                img(src="img/arrprew.svg", alt="") 
+                | К списку работ
+            p.name_of_pro
+                | Сайт портфолио разработчика
+            p.type_of_work 
+                | Верстка
+            img(src="img/prev1.png", alt="").portfolio_preview
+            a(href="index.html" ).dwn-btn.btn
+                img(src="img/arrowdown.svg", alt="") 
+                span Смотреть проект
+            .work_text
+                p  Верстка своего сайта-портфолио
+                p  Верстка из Figma. Были использованы препроцессор scss, pug.
+                p  Анимация svg  
+            a(href="index.html#portfolio").back_link
+                img(src="img/arrprew.svg", alt="") 
+                | К списку работ       
+                

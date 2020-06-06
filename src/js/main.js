@@ -14,19 +14,28 @@ openBtn.addEventListener('click', () => {
 });
 
 
-const anchors = document.querySelectorAll('.list a[href*="#"]')
+const anchors = document.querySelectorAll('.list a[href]')
+console.log(anchors)
+for (let anchor of anchors) { 
 
-for (let anchor of anchors) {
   anchor.addEventListener('click', function (e) {
-    e.preventDefault();
+    
     menu.classList.remove('menu_state_open');
     
-    const blockID = anchor.getAttribute('href').substr(1)
-    
-    document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
+    const blockID = anchor.getAttribute('href').substr(11);
+    const urlMain = window.location.href.toString();
+    console.log(urlMain);
+
+    if (urlMain.match(/index/) ){  
+      e.preventDefault();
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    } else {
+      console.log('true');
+      e.stopPropagation();
+    }
   })
 }
 
