@@ -1236,3 +1236,36 @@
      }
 
 }
+#circ {
+    offset-path: path('M164.64 491.115C199.491 510.169 239.481 521 282 521C417.31 521 527 411.31 527 276C527 140.69 417.31 31 282 31C146.69 31 37 140.69 37 276C37 316.444 46.7998 354.599 64.1544 388.22');
+      animation: move 15000ms infinite alternate ease-in-out;
+      width: 40px;
+    animation-direction:  reverse;
+}
+
+#circ2 {
+    offset-path: path('M378.38 105.23C303.189 62.4162 205.819 73.0809 141.676 137.224C64.7421 214.158 64.7416 338.892 141.675 415.825C218.608 492.758 343.342 492.758 420.276 415.824C483.649 352.452 494.82 256.646 453.79 181.839');
+      animation: move 17000ms infinite alternate ease-in-out;
+      width: 40px;
+    animation-direction:  reverse;
+}
+#circ3 {
+    offset-path: path('M164.64 491.115C199.491 510.169 239.481 521 282 521C417.31 521 527 411.31 527 276C527 140.69 417.31 31 282 31C146.69 31 37 140.69 37 276C37 316.444 46.7998 354.599 64.1544 388.22');
+      animation: move 18000ms infinite alternate ease-in-out;
+      width: 40px;
+    animation-direction:  reverse;
+}
+
+@keyframes move {
+  0% {
+    offset-distance: 0%;
+  }
+  50% {
+    offset-distance: 100%;
+  }
+  100% {
+    offset-distance: 0%;
+
+  }
+}
+

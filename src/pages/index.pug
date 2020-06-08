@@ -19,15 +19,15 @@ block content
                         svg(width="557" height="558" viewbox="0 0 557 558" fill="none" xmlns="http://www.w3.org/2000/svg")
                           path(id="theMotionPath" d="M164.64 491.115C199.491 510.169 239.481 521 282 521C417.31 521 527 411.31 527 276C527 140.69 417.31 31 282 31C146.69 31 37 140.69 37 276C37 316.444 46.7998 354.599 64.1544 388.22" stroke="white" stroke-width="3")
                           path( id="theMotionPath2" d="M378.38 105.23C303.189 62.4162 205.819 73.0809 141.676 137.224C64.7421 214.158 64.7416 338.892 141.675 415.825C218.608 492.758 343.342 492.758 420.276 415.824C483.649 352.452 494.82 256.646 453.79 181.839" stroke="white" stroke-width="3" stroke-linecap="round")
-                          circle(cx="0.5" cy="0.5" r="17" fill="#F3F3F3" stroke="white" stroke-width="3")
-                            animatemotion(dur="6s" repeatcount="indefinite")
-                              mpath(xlink:href="#theMotionPath")
-                          circle(cx="0.5" cy="0" r="8" fill="#F3F3F3" stroke="white" stroke-width="3")
-                            animatemotion(dur="10s" repeatcount="indefinite")
-                              mpath(xlink:href="#theMotionPath2")
-                          circle(cx="0.5" cy="0.5" r="9" fill="#F3F3F3" stroke="white" stroke-width="3")
-                            animatemotion(dur="16s" repeatcount="indefinite")
-                              mpath(xlink:href="#theMotionPath")
+                          circle(cx="0.5" cy="0.5" r="17" fill="#F3F3F3" stroke="white" stroke-width="3" id="circ")
+                            //- animatemotion(dur="6s" repeatcount="indefinite" )
+                            //-   mpath(xlink:href="#theMotionPath")
+                          circle(cx="0.5" cy="0" r="8" fill="#F3F3F3" stroke="white" stroke-width="3" id="circ2")
+                            //- animatemotion(dur="10s" repeatcount="indefinite")
+                            //-   mpath(xlink:href="#theMotionPath2")
+                          circle(cx="0.5" cy="0.5" r="9" fill="#F3F3F3" stroke="white" stroke-width="3" id="circ3")
+                            //- animatemotion(dur="16s" repeatcount="indefinite" id="circ3")
+                            //-   mpath(xlink:href="#theMotionPath")
 
                 .info-part
                     .top-info
@@ -54,7 +54,7 @@ block content
                                 a(href="mailto:web.zaslavskaya@gmail.com" target="_blank")
                                     img(src="img/gmail.svg", alt="gmail")
                             li
-                                a(href="tg://resolve?domain=<asya_nastya>" target="_blank")
+                                a(href="https://t.me/asya_nastya" target="_blank")
                                     img(src="img/teleg.svg", alt="tel")
     .skills_section#skills        
             .plate                
@@ -116,7 +116,7 @@ block content
                           img(src="img/avatar.jpg" alt="asya_photo")
                 .text-part
                     p Добро пожаловать на мой сайт-портфолио! 
-                    p Я работала front-end разработчиком удаленно и в офисе. Опыт работы около 2-х лет.  В основном занималась версткой сайтов и лендингов. Сейчас  нарабатываю портфолио. 
+                    p Я работала front-end разработчиком удаленно и в офисе. Опыт работы 2 года.  В основном занималась версткой сайтов и лендингов. Сейчас  нарабатываю портфолио. 
                     p Приглашаю к сотрудничеству веб-дизайнеров, менеджеров веб-студий и всех кому нужна верстка и front-end! Сделаем интернет лучше вместе!
 
     .portfolio_section#portfolio
@@ -146,9 +146,3 @@ block content
                             | Верстка из макета в Figma
                         span.description
                             | Верстка лендинга с анимациями и эффектами появления некоторых блоков. Добавлена таблица со статистикой, ссылки на официальные источники
-                                        
-                               
-        
-
-             
-
